@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@200&family=Roboto:wght@300;400;700&family=Rubik+Distressed&display=swap');
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+h1{ font-size: 4em;
+    color: #f4f3ee;}
+h2{ font-size: 3.5em;
+    color: #f4f3ee;}
+h3{ font-size: 2.5em;
+    color: #f4f3ee;}
+h4{ font-size: 2em;
+    color: #f4f3ee;}
+p{ font-size: 2em;
+    color: #f4f3ee;}
+ul{ list-style: none;}
+a{ text-decoration: none;
+    color: #f4f3ee;}
+
+$naranja: #EB5E28;
+$gris: #4d4c4b;
+$crema: #FFFCF2;
+$marron: #463f3a;
+
+body{ background-color: #0a0908;
+      font-family: 'Lato', sans-serif;}    
+
+/* =========================@extend======================== */
+.titulos{
+    padding: 2% 0;
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+@mixin sizes ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}

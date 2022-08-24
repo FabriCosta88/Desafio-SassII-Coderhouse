@@ -1,0 +1,111 @@
+* -_-_-_-_-_-_-_-_-_-_-_-_-SECCION ACERCA DE-_-_-_-_-_-_-_-_-_-_-_-_-*/
+  /*============================MAIN=============================== */
+
+
+.titulo-acerca h1{
+    @extend .titulos
+}
+
+
+.icono-lista-1{grid-area: "icono1";}
+.icono-lista-2{grid-area: "icono2";}
+.icono-lista-3{grid-area: "icono3";}
+.icono-lista-4{grid-area: "icono4";}
+.texto-lista-1{grid-area: "texto1";}
+.texto-lista-2{grid-area: "texto2";}
+.texto-lista-3{grid-area: "texto3";}
+.texto-lista-4{grid-area: "texto4";}
+
+.lista-acerca{
+    padding: 5% 5%;
+    background-color: $crema;
+    display: grid;
+    grid-template-areas: 
+        "icono1 texto1"
+        "icono2 texto2"
+        "icono3 texto3"
+        "icono4 texto4";
+    grid-template-columns: 0.1fr 1fr;
+    div{
+        @include sizes (1.8em, 1.8em);
+        margin-bottom: 20%;
+        img{
+            @include sizes (auto, auto);
+            max-width: 1.8em;
+            max-height: 1.8em;
+            min-width: 1.8em;
+            min-height: 1.8em;
+        }
+    }
+    h3{
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #0a0908;
+    }
+}
+
+.descripcion-final p{
+    margin: 8% 4%;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+/*============================MAIN=============================== */
+
+.titulo-acerca h1{
+    font-size: 2.5em;
+    margin: 3% 0;
+    text-align: center;
+}
+
+.altura{
+    height: 45em;
+}
+
+.icono-lista-1{grid-area: "icono1";}
+.icono-lista-2{grid-area: "icono2";}
+.icono-lista-3{grid-area: "icono3";}
+.icono-lista-4{grid-area: "icono4";}
+.texto-lista-1{grid-area: "texto1";}
+.texto-lista-2{grid-area: "texto2";}
+.texto-lista-3{grid-area: "texto3";}
+.texto-lista-4{grid-area: "texto4";}
+
+.lista-acerca{
+    padding: 5% 5%;
+    background-color: #FFFCF2;
+    display: grid;
+    grid-template-areas: 
+        "icono1 texto1"
+        "icono2 texto2"
+        "icono3 texto3"
+        "icono4 texto4";
+    grid-template-columns: 0.07fr 1fr;
+    div{
+        @include sizes (2.4em, 2.4em);
+        margin-bottom: 20%;
+        img{
+            @include sizes (auto, auto);
+            max-width: 2.4em;
+            max-height: 2.4em;
+            min-width: 2.4em;
+            min-height: 2.4em;
+        }
+    }
+    h3{
+        font-size: 2em;
+        font-weight: 400;
+        color: #0a0908;
+    }
+}
+
+.descripcion-final p{
+    margin: 8% 4%;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+}
+

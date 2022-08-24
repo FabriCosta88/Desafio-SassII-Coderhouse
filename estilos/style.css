@@ -1,0 +1,860 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@200&family=Roboto:wght@300;400;700&family=Rubik+Distressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4em;
+  color: #f4f3ee;
+}
+
+h2 {
+  font-size: 3.5em;
+  color: #f4f3ee;
+}
+
+h3 {
+  font-size: 2.5em;
+  color: #f4f3ee;
+}
+
+h4 {
+  font-size: 2em;
+  color: #f4f3ee;
+}
+
+p {
+  font-size: 2em;
+  color: #f4f3ee;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f3ee;
+}
+
+.naranja {
+  color: #EB5E28;
+}
+
+.gris {
+  color: #463f3a;
+}
+
+body {
+  background-color: #0a0908;
+  font-family: "Lato", sans-serif;
+}
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_SECCION CURSOS-_-_-_-_-_-_-_-_-_-_-_-_-_ */
+.cursos {
+  background-color: #212025;
+  padding-bottom: 10%;
+}
+.cursos .titulo-curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/Cursos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.cursos .titulo-curso h1 {
+  font-size: 2.5em;
+  padding: 4% 0;
+}
+.cursos .titulo-curso .info-curso p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 5% 3%;
+  text-align: center;
+}
+
+.contenedor-cards {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.contenedor-cards .card {
+  width: 20em;
+  margin: 0.8em;
+  padding: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1.2em 1.2em 3.1em rgba(0, 0, 0, 0.5);
+  background-color: rgba(228, 235, 235, 0.1);
+  border-left: 1px solid rgba(228, 235, 235, 0.5);
+  border-top: 1px solid rgba(228, 235, 235, 0.5);
+  border-radius: 1em;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 300ms;
+}
+.contenedor-cards .card .cover-card {
+  width: 100%;
+  height: 15em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.contenedor-cards .card .cover-card img {
+  width: 110%;
+  height: 15em;
+  transition: all 300ms;
+}
+.contenedor-cards .card h2 {
+  margin: 3% 0;
+  font-size: 2em;
+  font-weight: 800;
+  text-align: center;
+}
+.contenedor-cards .card p {
+  margin-top: 5%;
+  padding: 4% 0;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-0.8em);
+}
+
+.card:hover .cover-card img {
+  transform: scale(1.1);
+}
+
+.footer-card {
+  margin-top: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+.footer-card .boton-card {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
+  background-color: #EB5E28;
+}
+
+.boton-card:hover {
+  background-color: #c44d1e;
+}
+
+@media screen and (min-width: 700px) {
+  .contenedor-cards {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor-cards {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+  }
+}
+/* -_-_-_-_-_-_-_-_-_-_-_-_-SECCION ACERCA DE-_-_-_-_-_-_-_-_-_-_-_-_-*/
+/*============================MAIN=============================== */
+.titulo-acerca h1 {
+  font-size: 2.5em;
+  margin: 3% 0;
+  text-align: center;
+}
+
+.icono-lista-1 {
+  grid-area: "icono1";
+}
+
+.icono-lista-2 {
+  grid-area: "icono2";
+}
+
+.icono-lista-3 {
+  grid-area: "icono3";
+}
+
+.icono-lista-4 {
+  grid-area: "icono4";
+}
+
+.texto-lista-1 {
+  grid-area: "texto1";
+}
+
+.texto-lista-2 {
+  grid-area: "texto2";
+}
+
+.texto-lista-3 {
+  grid-area: "texto3";
+}
+
+.texto-lista-4 {
+  grid-area: "texto4";
+}
+
+.lista-acerca {
+  padding: 5% 5%;
+  background-color: #FFFCF2;
+  display: grid;
+  grid-template-areas: "icono1 texto1" "icono2 texto2" "icono3 texto3" "icono4 texto4";
+  grid-template-columns: 0.1fr 1fr;
+}
+.lista-acerca div {
+  width: 1.8em;
+  height: 1.8em;
+  margin-bottom: 20%;
+}
+.lista-acerca div img {
+  width: auto;
+  height: auto;
+  max-width: 1.8em;
+  max-height: 1.8em;
+  min-width: 1.8em;
+  min-height: 1.8em;
+}
+.lista-acerca h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #0a0908;
+}
+
+.descripcion-final p {
+  margin: 8% 4%;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  /*============================MAIN=============================== */
+  .titulo-acerca h1 {
+    font-size: 2.5em;
+    margin: 3% 0;
+    text-align: center;
+  }
+  .altura {
+    height: 45em;
+  }
+  .icono-lista-1 {
+    grid-area: "icono1";
+  }
+  .icono-lista-2 {
+    grid-area: "icono2";
+  }
+  .icono-lista-3 {
+    grid-area: "icono3";
+  }
+  .icono-lista-4 {
+    grid-area: "icono4";
+  }
+  .texto-lista-1 {
+    grid-area: "texto1";
+  }
+  .texto-lista-2 {
+    grid-area: "texto2";
+  }
+  .texto-lista-3 {
+    grid-area: "texto3";
+  }
+  .texto-lista-4 {
+    grid-area: "texto4";
+  }
+  .lista-acerca {
+    padding: 5% 5%;
+    background-color: #FFFCF2;
+    display: grid;
+    grid-template-areas: "icono1 texto1" "icono2 texto2" "icono3 texto3" "icono4 texto4";
+    grid-template-columns: 0.07fr 1fr;
+  }
+  .lista-acerca div {
+    width: 2.4em;
+    height: 2.4em;
+    margin-bottom: 20%;
+  }
+  .lista-acerca div img {
+    width: auto;
+    height: auto;
+    max-width: 2.4em;
+    max-height: 2.4em;
+    min-width: 2.4em;
+    min-height: 2.4em;
+  }
+  .lista-acerca h3 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #0a0908;
+  }
+  .descripcion-final p {
+    margin: 8% 4%;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_SECCION CONTACTO-_-_-_-_-_-_-_-_-_-_-_-_-_ */
+.contacto {
+  background-color: #212025;
+}
+.contacto .contenedor-contacto {
+  padding: 1.5em;
+}
+.contacto .contenedor-contacto .escribinos {
+  font-size: 3.5em;
+  font-weight: 400;
+  text-align: center;
+  padding: 5% 0;
+}
+.contacto .contenedor-contacto .contacto-tarjeta {
+  box-shadow: 0 0 1.2em 0 rgba(255, 255, 255, 0.3);
+}
+.contacto .contenedor-contacto .contacto-tarjeta .contacto-formulario {
+  padding: 1em;
+  background-color: #2d2d31;
+}
+.contacto .contenedor-contacto .contacto-tarjeta .contacto-formulario form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+.contacto .contenedor-contacto .contacto-tarjeta .contacto-formulario form p {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1em;
+}
+.contacto .contenedor-contacto .contacto-tarjeta .contacto-formulario form p input, .contacto .contenedor-contacto .contacto-tarjeta .contacto-formulario form p textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 1px solid #ba181b;
+}
+
+.textarea-formulario {
+  grid-column: 1/3;
+}
+
+.boton-formulario {
+  margin-top: 5%;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+}
+.boton-formulario button {
+  font-weight: bold;
+  color: #000;
+  padding: 0.5em;
+  width: 25%;
+  background-color: #EB5E28;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0.3em 0.3em 0.3em rgba(255, 255, 255, 0.3);
+}
+
+.boton-formulario button:hover {
+  background-color: #c44d1e;
+}
+
+.contacto-info {
+  padding: 1em;
+  background-color: #e2e0d8;
+}
+.contacto-info h4 {
+  font-size: 1.5em;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #0a0908;
+}
+.contacto-info ul {
+  color: #0a0908;
+  text-align: center;
+  margin: 8% 0;
+}
+.contacto-info p {
+  margin-top: 10%;
+  color: #0a0908;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacto-tarjeta {
+    margin: 5em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contacto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contacto-info p {
+    text-align: left;
+  }
+}
+.titulo-servicio {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/Servicios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.titulo-servicio h1 {
+  padding: 2% 0;
+  font-weight: 500;
+  text-align: center;
+}
+.titulo-servicio p {
+  padding: 3% 5%;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container-tarjetas {
+  padding: 1.2em;
+  background-color: #2d2d31;
+}
+.container-tarjetas .tarjeta-servicio1 {
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgba(24, 23, 23, 0.5607843137);
+  box-shadow: 1.2em 1.2em 3.1em rgba(0, 0, 0, 0.5);
+  border-radius: 1em;
+}
+.container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-info {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-info h3 {
+  padding: 5% 0;
+  font-size: 2em;
+  text-align: center;
+}
+.container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-info p {
+  padding: 1em 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+.container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-img {
+  width: 100%;
+  height: 80%;
+}
+.container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 1em 1em;
+}
+.container-tarjetas .tarjeta-servicio {
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(24, 23, 23, 0.5607843137);
+  box-shadow: 1.2em 1.2em 3.1em rgba(0, 0, 0, 0.5);
+  border-radius: 1em;
+}
+.container-tarjetas .tarjeta-servicio .tarjeta-servicio-info {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-tarjetas .tarjeta-servicio .tarjeta-servicio-info h3 {
+  padding: 5% 0;
+  font-size: 2em;
+  text-align: center;
+}
+.container-tarjetas .tarjeta-servicio .tarjeta-servicio-info p {
+  padding: 1em 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+.container-tarjetas .tarjeta-servicio .tarjeta-servicio-img {
+  width: 100%;
+  height: 80%;
+}
+.container-tarjetas .tarjeta-servicio .tarjeta-servicio-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 1em 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-tarjetas {
+    padding: 1.2em;
+    background-color: #2d2d31;
+  }
+  .container-tarjetas .tarjeta-servicio1 {
+    margin-bottom: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    background-color: rgba(24, 23, 23, 0.5607843137);
+    box-shadow: 1.2em 1.2em 3.1em rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+  }
+  .container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-info {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-info h3 {
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+  }
+  .container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-info p {
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+  }
+  .container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-img {
+    width: 100%;
+    height: 100%;
+  }
+  .container-tarjetas .tarjeta-servicio1 .tarjeta-servicio-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .container-tarjetas .tarjeta-servicio {
+    margin-bottom: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    background-color: rgba(24, 23, 23, 0.5607843137);
+    box-shadow: 1.2em 1.2em 3.1em rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+  }
+  .container-tarjetas .tarjeta-servicio .tarjeta-servicio-info {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .container-tarjetas .tarjeta-servicio .tarjeta-servicio-info h3 {
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+  }
+  .container-tarjetas .tarjeta-servicio .tarjeta-servicio-info p {
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+  }
+  .container-tarjetas .tarjeta-servicio .tarjeta-servicio-img {
+    width: 100%;
+    height: 100%;
+  }
+  .container-tarjetas .tarjeta-servicio .tarjeta-servicio-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+/* =============================HEADER================================= */
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #463f3a;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+}
+header .logo {
+  margin-top: 5%;
+  color: #d3d2cf;
+  font-family: "Rubik Distressed", cursive;
+  text-align: center;
+}
+header .secciones .navbar {
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+header a:hover {
+  color: #EB5E28;
+}
+
+/* ==========================MAIN======================== */
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  font-size: 1em;
+  height: 90vh;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/Estudio\ index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slogan {
+  grid-area: slogan;
+}
+.slogan .ideaMusical {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.slogan .ideaMusical h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.slogan .ideaMusical p {
+  padding: 0% 10%;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.queHacer {
+  background-color: #FFFCF2;
+  grid-area: queHacer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+}
+.queHacer .contenedor {
+  height: 200vh;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.queHacer .contenedor h2 {
+  padding: 10% 0;
+  font-size: 2.3em;
+  text-align: center;
+  color: #0a0908;
+  font-weight: 400;
+}
+.queHacer .contenedor .contenedorCarta .carta {
+  padding-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.queHacer .contenedor .contenedorCarta h3 {
+  margin: 5% 0;
+  font-size: 1.5em;
+  color: #0a0908;
+}
+.queHacer .contenedor .contenedorCarta p {
+  font-size: 1em;
+  font-weight: 350;
+  color: #0a0908;
+}
+
+.index {
+  display: grid;
+  grid-template-areas: "titulo" "slogan" "queHacer";
+}
+
+/* ==========================FOOTER=========================== */
+footer {
+  background-color: #463f3a;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+}
+footer .logoRedes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.copyright p {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+  /*============================HEADER==============================  */
+  header {
+    width: 100%;
+    height: 10vh;
+    background-color: #463f3a;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+  }
+  header .logo {
+    margin: 0;
+    color: #d3d2cf;
+    font-size: 1.8em;
+    font-family: "Rubik Distressed", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .secciones .navbar {
+    height: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* ========================HEADER============================= */
+  header {
+    width: 100%;
+    height: 10vh;
+    background-color: #463f3a;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+  }
+  header .logo {
+    margin: 0;
+    padding-left: 5%;
+    color: #d3d2cf;
+    font-size: 1.8em;
+    font-family: "Rubik Distressed", cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header .secciones .navbar {
+    height: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  /* ===========================MAIN=============================== */
+  .slogan {
+    grid-area: slogan;
+  }
+  .slogan .ideaMusical {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    align-items: center;
+  }
+  .slogan .ideaMusical h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .slogan .ideaMusical p {
+    font-weight: lighter;
+    text-align: center;
+  }
+  .queHacer {
+    background-color: #FFFCF2;
+    grid-area: queHacer;
+  }
+  .queHacer .contenedor {
+    height: 100vh;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .queHacer .contenedor h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10% 0;
+    font-size: 2.3em;
+    text-align: center;
+    color: #0a0908;
+    font-weight: 400;
+  }
+  .queHacer .contenedor .contenedorCarta {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .queHacer .contenedor .contenedorCarta .carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .queHacer .contenedor .contenedorCarta .carta .iconos {
+    transition: all 300ms;
+  }
+  .queHacer .contenedor .contenedorCarta .carta h3 {
+    margin: 3% 0;
+    font-size: 1.5em;
+    color: #0a0908;
+  }
+  .queHacer .contenedor .contenedorCarta .carta p {
+    height: 100%;
+    width: 50%;
+    font-size: 1em;
+    font-weight: 350;
+    color: #0a0908;
+  }
+  .iconos:hover {
+    translate: 0 -15%;
+  }
+}/*# sourceMappingURL=style.css.map */
