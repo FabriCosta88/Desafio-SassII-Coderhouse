@@ -1,11 +1,88 @@
-* -_-_-_-_-_-_-_-_-_-_-_-_-SECCION ACERCA DE-_-_-_-_-_-_-_-_-_-_-_-_-*/
-  /*============================MAIN=============================== */
-
-
-.titulo-acerca h1{
-    @extend .titulos
+/* -_-_-_-_-_-_-_-_-_-_-_-_-SECCION ACERCA DE-_-_-_-_-_-_-_-_-_-_-_-_-*/
+/*============================HEADER=============================== */
+header{
+    @include sizes (100%, 10vh);
+    background-color: $marron;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+        margin-top: 5%;
+        color: #d3d2cf;
+        font-family: 'Rubik Distressed', cursive;
+        text-align: center;
+    }
+    .secciones{
+        width: 100%;
+        height: 6.2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .hamburguesa{
+            font-size: 1.5em;
+            margin-right: 1.2em;
+            cursor: pointer;
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+            height: 0vh;
+            top: 3.5em;
+            background: rgba(0, 0, 0, .95);
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            transition: all .5s;
+            li{
+                display: none;
+                line-height: 1.6em;
+                margin: 3.1em 0;
+                transition: all .5s;
+            }
+        }
+    }
 }
 
+#check:checked ~ .navbar{
+    height: 100vh;
+    li{
+        display: block;
+    }
+}
+
+/*============================MAIN=============================== */
+
+
+
+.acerca-de{
+    background-color: #212025;
+    padding-bottom: 3%;
+    .titulo-acerca{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.8),
+            rgba(0,0,0,0.8)
+        ) 
+        ,url(../Images/Acerca.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        h1{ font-size: 3em;
+            font-weight: 500;
+            text-align: center;}
+        .naranja{
+            font-size: 2em;
+            font-weight: 500;
+            text-align: center;
+            color: $naranja;
+        }
+    }
+}
 
 .icono-lista-1{grid-area: "icono1";}
 .icono-lista-2{grid-area: "icono2";}
@@ -49,29 +126,63 @@
     font-size: 1.5em;
     font-weight: 300;
     text-align: center;
-}
+    .naranja{ color: $naranja;}
+    }
 
 @media screen and (min-width: 1024px){
+/*===========================HEADER=============================*/
+header{
+    @include sizes (100%, 10vh);
+    background-color: #463f3a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+        margin: 0;
+        padding: 0 10;
+        color: #d3d2cf;
+        font-size: 1.8em;
+        font-family: 'Rubik Distressed', cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .secciones{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        .hamburguesa{
+            display: none;
+        }
+        .navbar{
+            @include sizes (100%, 100%);
+            position: relative;
+            width: 100%;
+            height: 0vh;
+            top: 0;
+            background: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            transition: none;
+            font-weight: bold;
+            font-size: 1em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            li{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                line-height: 1.6em;
+                margin: 0 0;
+                transition: none;
+            }
+        }    
+    }
+}
+
 /*============================MAIN=============================== */
-
-.titulo-acerca h1{
-    font-size: 2.5em;
-    margin: 3% 0;
-    text-align: center;
-}
-
-.altura{
-    height: 45em;
-}
-
-.icono-lista-1{grid-area: "icono1";}
-.icono-lista-2{grid-area: "icono2";}
-.icono-lista-3{grid-area: "icono3";}
-.icono-lista-4{grid-area: "icono4";}
-.texto-lista-1{grid-area: "texto1";}
-.texto-lista-2{grid-area: "texto2";}
-.texto-lista-3{grid-area: "texto3";}
-.texto-lista-4{grid-area: "texto4";}
 
 .lista-acerca{
     padding: 5% 5%;
@@ -106,6 +217,8 @@
     font-size: 1.5em;
     font-weight: 300;
     text-align: center;
+    .naranja{ color: $naranja;}
+    }
 }
-}
+
 

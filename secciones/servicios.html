@@ -4,74 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../estilos/style.css">
     <title>De Musica Ligera</title>
 </head>
 <body>
     <header>
-      <p class="logo">De Musica Ligera</p>
-      <nav class="secciones">
-          <ul class="navbar">
-              <li>
-                  <a href="../index.html">Home</a>
-              </li>
-              <li>
-                  <a href="./cursos.html">Cursos</a>
-              </li>
-              <li>
-                  <a href="./servicios.html">Servicios</a>
-              </li>
-              <li>
-                  <a href="./contacto.html">Contacto</a>
-              </li>
-              <li>
-                  <a href="./acercaDe.html">Acerca de</a>
-              </li>
-          </ul>
+        <nav class="secciones">
+            <div>
+                <p class="logo">De Musica Ligera</p>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburguesa">
+                <img src="../Images/Iconos/icons8-menú.svg" alt="Menú">
+            </label>
+            <ul class="navbar">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./cursos.html">Cursos</a>
+                </li>
+                <li>
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./acercaDe.html">Acerca de</a>
+                </li>
+            </ul>
       </nav>
     </header>
 
     <main class="servicios">
         <section class="titulo-servicio">
             <h1>Servicios</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam blanditiis iure laudantium non. Quas provident, vero, voluptas debitis aliquid ipsam fugiat ducimus adipisci nam officia itaque, facilis veritatis impedit distinctio?</p>
+            <p>Para que tus ideas y proyectos fluyan con más rapidez te ofrecemos nuestra sección de servicios en donde podes contratar desde músicos sesionistas hasta productores para que puedas terminar tus canciones y disfrutarlas en todas las plataformas.</p>
         </section>
         
         <section class="container-tarjetas">
-            <div class="tarjeta-servicio">
+            <div class="tarjeta-servicio" data-aos="fade-up">
                 <div class="tarjeta-servicio-info">
                     <h3 class="naranja">Grabacion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab natus neque, deserunt labore repellat illo impedit dolor velit earum laudantium id quam officiis explicabo minima aut dolores suscipit veritatis?</p>
+                    <p>Contamos con tres salas diseñadas por ingenieros y testeadas acusticamente para realizar una grabación óptima, además contamos con una sala especial para Orquesta en donde entran 40 músicos. Todas las salas cuentan con equipación de monitoreos y microfonía</p>
                 </div>
                 <div class="tarjeta-servicio-img">
-                    <img src="../Images/Servicios/Grabacion.jpg" alt="">
+                    <img src="../Images/Servicios/Grabacion.jpg" alt="micrófono_rode_con_antipop">
                 </div>
             </div>
-            <div class="tarjeta-servicio1">
+            <div class="tarjeta-servicio1" data-aos="fade-up">
                 <div class="tarjeta-servicio-img">
-                    <img src="../Images/Servicios/Musico-sesionista.jpg" alt="">
+                    <img src="../Images/Servicios/Musico-sesionista.jpg" alt="persona_tocando_contrabajo">
                 </div>
                 <div class="tarjeta-servicio-info">
                     <h3 class="naranja">Musicos sesionistas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab natus neque, deserunt labore repellat illo impedit dolor velit earum laudantium id quam officiis explicabo minima aut dolores suscipit veritatis?</p>
+                    <p>Tenemos una lista de músicos sesionistas dispuestos a grabar tus ideas. Músicos expertos en diversos géneros y estilos. Podrás contar con bateristas, guitarristas, bajistas, pianistas, saxofonistas, trompetistas, chelistas, violinistas.</p>
                 </div>
             </div>
-            <div class="tarjeta-servicio">
+            <div class="tarjeta-servicio" data-aos="fade-up">
                 <div class="tarjeta-servicio-info">
                     <h3 class="naranja">Bases Instrumentales (Beats)</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab natus neque, deserunt labore repellat illo impedit dolor velit earum laudantium id quam officiis explicabo minima aut dolores suscipit veritatis?</p>
+                    <p>Si lo que necesesitás es una pista o base instrumental (beats) para que puedas grabar tu melodía o líneas, llegaste al lugar indicado! Nuestros productores escucharán tu propuesta y realizarán el beat ideal para tu canción. Este servicio incluye hasta 4 devoluciones</p>
                 </div>
                 <div class="tarjeta-servicio-img">
-                    <img src="../Images/Servicios/Beats.jpg" alt="">
+                    <img src="../Images/Servicios/Beats.jpg" alt="controlador_midi_beats">
                 </div>
             </div>
-            <div class="tarjeta-servicio1">
+            <div class="tarjeta-servicio1" data-aos="fade-up">
                 <div class="tarjeta-servicio-img">
-                    <img src="../Images/Servicios/Produccion-musical.jpg" alt="">
+                    <img src="../Images/Servicios/Produccion-musical.jpg" alt="persona_en_homestudio">
                 </div>   
                 <div class="tarjeta-servicio-info">
                     <h3 class="naranja">Producción Musical</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab natus neque, deserunt labore repellat illo impedit dolor velit earum laudantium id quam officiis explicabo minima aut dolores suscipit veritatis?</p>
+                    <p>Podés dejar que nosotros produzcamos tus canciones o tu disco. Contamos con productores musicales dispuestos a realizar la labor de coach haciendo un seguimiento y ayudandote en la producción, arreglos musicales y grabación.</p>
                 </div>
             </div>
 
@@ -80,19 +88,23 @@
     <footer>
         <div class="logoRedes">
             <div class="facebook">
-                <img src="../Images/Iconos/icons8-facebook.svg" alt="">
+                <img src="../Images/Iconos/icons8-facebook.svg" alt="Icono_Facebook">
             </div>
             <div class="instagram">
-                <img src="../Images/Iconos/icons8-instagram.svg" alt="">
+                <img src="../Images/Iconos/icons8-instagram.svg" alt="Icono_Instagram">
             </div>
             <div class="youTube">
-                <img src="../Images/Iconos/icons8-youtube.svg" alt="">
+                <img src="../Images/Iconos/icons8-youtube.svg" alt="Icono_Youtube">
             </div>
         </div>
         <div class="copyright">
             <p>&copy; De musica ligera 2022</p>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./estilos/style.css"/>
     <title>De Musica Ligera</title>
 </head>
 <body>
     <header>
-        <p class="logo">De Musica Ligera</p>
         <nav class="secciones">
+            <div>
+                <p class="logo">De Musica Ligera</p>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburguesa">
+                <img src="./Images/Iconos/icons8-menú.svg" alt="Menú">
+            </label>
             <ul class="navbar">
                 <li>
                     <a href="index.html">Home</a>
@@ -39,45 +47,46 @@
     
         <section class="slogan">
             <div class="ideaMusical">
-                
+                <div data-aos="fade-right">
                     <h1>Grabá tu idea musical <br><span class="gris">o</span><br><span class="naranja">nosotros te producimos una </span></h1>
-
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui asperiores culpa aut soluta debitis, dignissimos nemo provident! Maiores, hic quod provident non minima magnam ipsam qui voluptatum alias perferendis!</p>
-
+                </div>
+                <div data-aos="fade-up">
+                    <p>No dejes la idea musical colgada en el aire, vení y grabala en nuestro estudio. Te trabaste con tu idea musical? Nosotros la terminamos de producir. Necesitas un beat? Te lo armamos a tu gusto. Y si necesitas podemos grabar tus ideas con nuestro músicos sesionistas.</p>
+                </div>
+            </div>    
         </section>
 
         <section class="queHacer">
             <div class="contenedor">
                 <h2>Que podemos hacer por vos</h2>
                 <div class="contenedorCarta">
-                    <div class="carta">
+                    <div class="carta" data-aos="fade-down">
                         <div class="iconos">
                             <img src="./Images/Iconos/grabacion.svg" alt="icono_grabacion">
                         </div>
                         <h3>Grabación</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum veritatis enim quia perferendis, omnis repudiandae beatae harum earum delectus voluptate veniam, perspiciatis molestiae facere dolor consequatur, neque tempore quasi.</p>
+                        <p>Grabá en nustras salas diseñadas por ingenieros y tratadas acústicamente para obtener un producto de calidad</p>
                     </div>
-                    <div class="carta">
+                    <div class="carta" data-aos="fade-down">
                         <div class="iconos">
                             <img src="./Images/Iconos/musicos.svg" alt="icono_musico_sesionista">
                         </div>
                         <h3>Músicos Sesionistas</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum veritatis enim quia perferendis, omnis repudiandae beatae harum earum delectus voluptate veniam, perspiciatis molestiae facere dolor consequatur, neque tempore quasi.</p>
+                        <p>Contamos con una lista amplia de profesionaes dispuestos a grabar tus ideas y proyectos</p>
                     </div>
-                    <div class="carta">
+                    <div class="carta" data-aos="fade-up">
                         <div class="iconos">
                             <img src="./Images/Iconos/beats.svg" alt="icono_beats">
                         </div>
                         <h3>Bases Instrumentales (beats)</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum veritatis enim quia perferendis, omnis repudiandae beatae harum earum delectus voluptate veniam, perspiciatis molestiae facere dolor consequatur, neque tempore quasi.</p>
+                        <p>Obtené ese beat que tanto buscás para poder inspirarte a grabar tus melodías o líneas</p>
                     </div>
-                    <div class="carta">
+                    <div class="carta" data-aos="fade-up">
                         <div class="iconos">
                             <img src="./Images/Iconos/produccion.svg" alt="icono_produccion">
                         </div>
                         <h3>Producción Musical</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum veritatis enim quia perferendis, omnis repudiandae beatae harum earum delectus voluptate veniam, perspiciatis molestiae facere dolor consequatur, neque tempore quasi.</p>
+                        <p>Nuestros Productores trabajarán en tus canciones para que lleves tu proyecto al siguiente nivel</p>
                     </div>
                 </div>
             </div>
@@ -87,19 +96,23 @@
     <footer>
         <div class="logoRedes">
             <div class="facebook">
-                <img src="./Images/Iconos/icons8-facebook.svg" alt="">
+                <img src="./Images/Iconos/icons8-facebook.svg" alt="Icono_Facebook">
             </div>
             <div class="instagram">
-                <img src="./Images/Iconos/icons8-instagram.svg" alt="">
+                <img src="./Images/Iconos/icons8-instagram.svg" alt="Icono_Instagram">
             </div>
             <div class="youTube">
-                <img src="./Images/Iconos/icons8-youtube.svg" alt="">
+                <img src="./Images/Iconos/icons8-youtube.svg" alt="Icono_Youtube">
             </div>
         </div>
         <div class="copyright">
             <p>&copy; De musica ligera 2022</p>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
