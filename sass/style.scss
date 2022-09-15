@@ -6,57 +6,19 @@
 
 /* =============================HEADER================================= */
 
-header{
-    @include sizes (100%, 10vh);
+.color-nav{
     background-color: $marron;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .logo{
-        margin-top: 5%;
-        color: #d3d2cf;
-        font-family: 'Rubik Distressed', cursive;
-        text-align: center;
-    }
-    .secciones{
-        width: 100%;
-        height: 6.2em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .hamburguesa{
-            font-size: 1.5em;
-            margin-right: 1.2em;
-            cursor: pointer;
-        }
-        .navbar{
-            position: fixed;
-            width: 100%;
-            height: 0vh;
-            top: 3.5em;
-            background: rgba(0, 0, 0, .95);
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.5em;
-            transition: all .5s;
-            li{
-                display: none;
-                line-height: 1.6em;
-                margin: 3.1em 0;
-                transition: all .5s;
-            }
-        }
-    }
 }
 
-#check:checked ~ .navbar{
-    height: 100vh;
-    li{
-        display: block;
-    }
+.navbar-dark .navbar-brand{
+    color: #FFFCF2;
 }
-            
-header a:hover{
+
+.navbar-brand{
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.navbar-dark .navbar-toggler{
     color: #EB5E28;
 }
 
@@ -100,6 +62,7 @@ header a:hover{
                 .naranja{color: $naranja;}
             }
             p{
+                font-size: 1.3em;
                 padding: 0% 5%;
                 font-weight: lighter;
                 text-align: center;
@@ -187,110 +150,53 @@ footer{
 
 @media screen and (min-width: 600px){
 /* =============================HEADER================================= */
-
-header{
-    @include sizes (100%, 10vh);
-    background-color: $marron;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .logo{
-        margin-top: 5%;
-        color: #d3d2cf;
-        font-family: 'Rubik Distressed', cursive;
-        text-align: center;
-    }
-    .secciones{
-        width: 100%;
-        height: 6.2em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .hamburguesa{
-            font-size: 1.5em;
-            margin-right: 1.2em;
-            cursor: pointer;
-        }
-        .navbar{
-            position: fixed;
-            width: 100%;
-            height: 0vh;
-            top: 3.5em;
-            background: rgba(0, 0, 0, .95);
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.5em;
-            transition: all .5s;
-            li{
-                display: none;
-                line-height: 1.6em;
-                margin: 3.1em 0;
-                transition: all .5s;
-            }
-        }
-    }
+.queHacer {
+    padding: 7%;
+    background-color: #FFFCF2;
+    grid-area: queHacer;
 }
 
-#check:checked ~ .navbar{
-    height: 100vh;
-    li{
-        display: block;
-    }
+.queHacer .contenedor h2 {
+    padding: 10% 0;
+    margin-top: 10%;
+    font-size: 2.3em;
+    text-align: center;
+    color: #0a0908;
+    font-weight: 400;
 }
+
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 992px){
 /* ========================HEADER============================= */
 
-header{
-    @include sizes (100%, 10vh);
-    background-color: #463f3a;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .logo{
-        margin: 0;
-        padding: 0 10%;
-        color: #d3d2cf;
-        font-size: 1.8em;
-        font-family: 'Rubik Distressed', cursive;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .secciones{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        .hamburguesa{
-            display: none;
-        }
-        .navbar{
-            @include sizes (100%, 100%);
-            position: relative;
-            width: 100%;
-            height: 0vh;
-            top: 0;
-            background: none;
-            font-weight: bold;
-            font-size: 1.5em;
-            transition: none;
-            font-weight: bold;
-            font-size: 1em;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            text-align: center;
-            li{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                line-height: 1.6em;
-                margin: 3.1em 0;
-                transition: none;
-            }
-        }    
-    }
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: end;
+}
+
+.nav-alineacion{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-dark .navbar-brand{
+    color: #FFFCF2;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link:hover{
+    color: #EB5E28;
+}
+
 
 /* ===========================MAIN=============================== */
 
@@ -309,6 +215,7 @@ header{
             margin-bottom: 5%;  
         }
         p{
+            font-size: 2em;
             font-weight: lighter;
             text-align: center;
         } 
